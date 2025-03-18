@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Employee Attendance</h2>
+        <form action="submit_attendance.php" method="POST">
+            <label for="employee_id">Employee ID:</label>
+            <input type="number" id="employee_id" name="employee_id" required>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="checkin">Check-In Time:</label>
+            <input type="time" id="checkin" name="checkin" required>
+            
+            <label for="checkout">Check-Out Time:</label>
+            <input type="time" id="checkout" name="checkout">
+            
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+                <option value="Late">Late</option>
+                <option value="On Leave">On Leave</option>
+            </select>
+            
+            <button type="submit">Submit Attendance</button>
+        </form>
+    </div>
+</body>
+</html>
